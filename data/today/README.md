@@ -13,8 +13,7 @@ We present the dataset in modified final instance version with and without expla
     Line3: event:(gold relation) story:([Additional sentence for gold relation]+Context) explanation:(human annotated explanation for gold relation) \n
     Line4: event:(opposite relation) story:([Additional sentence for gold relation]+Context) explanation:(human annotated explanation for gold relation) \n
 
-Inference
-===
+## Inference
 The model should output a probability for entailment for each line and please refer to ../code/evaluator_today.py for dataset evaluation. For each instance:
 
     Line1: origin_correct_prob
