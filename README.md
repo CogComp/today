@@ -19,7 +19,7 @@ and put it under `model/best_model_checkpoint/`.
 ## Run Experiments
 Work under `code/` directory (This is very important as we refer all paths relative to this working directory below).
 
-- Install requirements by `pip install -r requirements.txt`
+- Install requirements by `pip install -r requirement.txt`
 
 - To run and train the best ptntime model, use `sh train_ptntime.sh`
 
