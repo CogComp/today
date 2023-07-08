@@ -205,11 +205,7 @@ class LineByLineTextDataset(Dataset):
         if extra_padding_tag == 'inputs_2':
             for key, value in self.inputs_1.items():
                 for j in range(int(len(self.inputs_1[key]) / len(self.inputs_2[key])) + 1):
-                    if j == 0:
-                        self.inputs[key] = [[a + extra_padding_num * [0] for a in value[i]] + self.inputs_2[key][i]
-                                            for i in
-                                            range(0, len(self.inputs_2[key]))]
-                    elif j == int(len(self.inputs_1[key]) / len(self.inputs_2[key])):
+                    if j == int(len(self.inputs_1[key]) / len(self.inputs_2[key])):
                         # print(j)
                         self.inputs[key] += [
                             [a + extra_padding_num * [0] for a in value[i + j * (len(self.inputs_2[key]))]] +
@@ -224,10 +220,7 @@ class LineByLineTextDataset(Dataset):
         elif extra_padding_tag == 'inputs_1':
             for key, value in self.inputs_1.items():
                 for j in range(int(len(self.inputs_1[key]) / len(self.inputs_2[key])) + 1):
-                    if j == 0:
-                        self.inputs[key] = [value[i] + [a + extra_padding_num * [0] for a in self.inputs_2[key][i]]
-                                            for i in range(0, len(self.inputs_2[key]))]
-                    elif j == int(len(self.inputs_1[key]) / len(self.inputs_2[key])):
+                    if j == int(len(self.inputs_1[key]) / len(self.inputs_2[key])):
                         self.inputs[key] += [
                             value[i + j * (len(self.inputs_2[key]))] + [a + extra_padding_num * [0] for a in
                                                                         self.inputs_2[key][i]] for i in
@@ -240,10 +233,7 @@ class LineByLineTextDataset(Dataset):
 
         for key, value in self.labels_1.items():
             for j in range(int(len(self.labels_1[key]) / len(self.labels_2[key])) + 1):
-                if j == 0:
-                    self.labels[key] = [value[i] + self.labels_2[key][i] for i in
-                                        range(0, len(self.labels_2[key]))]
-                elif j == int(len(self.labels_1[key]) / len(self.labels_2[key])):
+                if j == int(len(self.labels_1[key]) / len(self.labels_2[key])):
                     self.labels[key] += [value[i + j * (len(self.labels_2[key]))] + self.labels_2[key][i] for i
                                          in
                                          range(0, len(self.labels_1[key]) - len(self.labels[key]))]
