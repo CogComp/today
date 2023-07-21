@@ -1,5 +1,5 @@
 # Introduction
-This is the data and code repository for our ACL 2023 paper ["Generic Temporal Reasoning with Differential Analysis and Explanation"](https://arxiv.org/pdf/2212.10467.pdf).
+This is the data and code repository for our ACL 2023 paper ["Generic Temporal Reasoning with Differential Analysis and Explanation"](http://cogcomp.org/page/publication_view/1008).
 
 # TODAY
 TODAY is our crowdsourced dataset. The TODAY dataset and its overall framework are designed to evaluate systems’ ability to make temporal predictions with plausible reasons.
@@ -47,12 +47,19 @@ and put it under `model/ptntime_explanation_verifier/`.
 # Citation
 See the following paper: 
 ```
-@misc{feng2023generic,
-      title={Generic Temporal Reasoning with Differential Analysis and Explanation}, 
-      author={Yu Feng and Ben Zhou and Haoyu Wang and Helen Jin and Dan Roth},
-      year={2023},
-      eprint={2212.10467},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
+@inproceedings{feng-etal-2023-generic,
+    title = "Generic Temporal Reasoning with Differential Analysis and Explanation",
+    author = "Feng, Yu  and
+      Zhou, Ben  and
+      Wang, Haoyu  and
+      Jin, Helen  and
+      Roth, Dan",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.671",
+    pages = "12013--12029",
+   }
 ```
