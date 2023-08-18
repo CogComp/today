@@ -7,13 +7,13 @@ TODAY is our crowdsourced dataset. The TODAY dataset and its overall framework a
 We include the dataset under `data/`. 
 
 # Models and Experiments
-We provide our codebase to reproduce the experiment results reported in the paper.
+We provide our codebase to reproduce the experiment results reported in the paper. All models can be found on [this page](http://cogcomp.org/page/model_view/9).
 
 ## Pre-trained Models
-- Download the entire directory `ptntime-pretrained-model` from [Google Drive](https://drive.google.com/drive/folders/1GirBYMWHJ13zqKl5qPcTjJQNJVtCfVaP?usp=sharing)
+- Download the entire directory [`ptntime-pretrained-model`](http://cogcomp.org/models/today_models/ptntime-pretrained-model.zip)
 and put it under `model/ptntime-pretrained-model/`. 
 
-- Download the entire directory `best_model_checkpoint` from [Google Drive](https://drive.google.com/drive/folders/1vvkDuqIWWu7mo4zh_aIjnxOhsXKfNSxW?usp=sharing)
+- Download the entire directory [`best_model_checkpoint`](http://cogcomp.org/models/today_models/best_model_checkpoint.zip)
 and put it under `model/best_model_checkpoint/`. 
 
 ## Run Experiments
@@ -36,7 +36,7 @@ Work under `code/` directory (This is very important as we refer all paths relat
 - Please follow the instructions and code in `GPT_today.ipynb`.
 
 ### Train Verifiers
-- We pre-trained the explanation sentence verifier. Download the entire directory `ptntime_explanation_verifier` from [Google Drive](https://drive.google.com/drive/folders/1FUYb4ZRTbjCnvqejLLg7TymKrOtGuZqR?usp=sharing)
+- We pre-trained the explanation sentence verifier. Download the entire directory [`ptntime_explanation_verifier`](http://cogcomp.org/models/today_models/ptntime_explanation_verifier.zip)
 and put it under `model/ptntime_explanation_verifier/`.
 
 - To train the general and additional sentence verifiers, use `sh train_ptntime_verifier.sh`.
